@@ -15,10 +15,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="container mt-3">
           <a class="navbar-brand" href="#"
-            ><img src="./assets/img/logo/logo.svg" class="text-center" alt="" />
+            ><img src="./assets/img/logo/logo.svg" class="" alt="" />
           </a>
           <button
             class="navbar-toggler"
@@ -60,11 +60,10 @@
     </header>
     <!-- Hero Section -->
     <section>
-      <div class="jumbotron bg-white">
+      <div class="jumbotron bg-white sm-mt-4">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-4 my-auto">
-              <div class="circle-1 img-fluid"></div>
+            <div class="col-sm-12 col-md-4 my-auto sm-mb-3">
               <div class="clearfix">
                 <h3 class="h3 all-in-one mb-0">
                   Your all-in-one <br />
@@ -74,7 +73,6 @@
                 <p class="track-your-progress d-block mt-0 mb-4 pb-4">
                   Track your progress as a student with this helpful app
                 </p>
-
                 <a
                   href=""
                   class="text-white text-center btn-sm btn-lg btn-block get-started text-decoration-none animated bounceInDown"
@@ -83,10 +81,10 @@
                 >
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 ml-auto">
+            <div class="col-sm-12 col-md-8">
               <figure class="float-right">
                 <img
-                  src="./assets/img/hero/hero1.png"
+                  src="./assets/img/hero/hero1_new.png"
                   class="img-fluid figure-img"
                   alt="hero1"
                 />
@@ -120,27 +118,77 @@
             </div>
 
             <div class="col-12 pt-4 faq-dropdown">
-              <p class="h3 font-weight-bold">How does Progress Tracker work?</p>
-              <hr />
-              <p class="h3 font-weight-bold">How do i know my Skill level?</p>
+              <p class="h3 font-weight-bold">
+                How does Progress Tracker work?
+                <a
+                  data-toggle="collapse"
+                  href="#collapseFaqOne"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseFaqOne"
+                  ><i class="fa fa-caret-down float-right"></i
+                ></a>
+              </p>
+
+              <div class="collapse" id="collapseFaqOne">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                libero eius nihil porro in illo, cupiditate deleniti debitis
+                voluptate iusto nisi dignissimos laborum quibusdam eveniet
+                ducimus exercitationem consequatur atque, possimus totam facilis
+                soluta ab quod? Adipisci repudiandae earum quaerat qui?
+              </div>
+
               <hr />
               <p class="h3 font-weight-bold">
-                Is there an Option for bitcoin Payment?
+                How do i know my Skill level?<a
+                  data-toggle="collapse"
+                  href="#collapseFaqTwo"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseFaqTwo"
+                  ><i class="fa fa-caret-down float-right"></i
+                ></a>
               </p>
+              <div class="collapse" id="collapseFaqTwo">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                libero eius nihil porro in illo, cupiditate deleniti debitis
+                voluptate iusto nisi dignissimos laborum quibusdam eveniet
+                ducimus exercitationem consequatur atque, possimus totam facilis
+                soluta ab quod? Adipisci repudiandae earum quaerat qui?
+              </div>
+              <hr />
+              <p class="h3 font-weight-bold">
+                Is there an Option for bitcoin Payment?<a
+                  data-toggle="collapse"
+                  href="#collapseFaqThree"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseFaqTwo"
+                  ><i class="fa fa-caret-down float-right"></i
+                ></a>
+              </p>
+              <div class="collapse" id="collapseFaqThree">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                libero eius nihil porro in illo, cupiditate deleniti debitis
+                voluptate iusto nisi dignissimos laborum quibusdam eveniet
+                ducimus exercitationem consequatur atque, possimus totam facilis
+                soluta ab quod? Adipisci repudiandae earum quaerat qui?
+              </div>
               <br class="mb-3" />
 
               <p>
-                <span class="faq-bottom pr-4">CALL-TO-ACTION</span>
-                <span class="faq-bottom">NEWSLETTER</span>
+                <span class="faq-bottom pr-4"
+                  ><a href="" class="text-decoration-none">
+                    CALL-TO-ACTION</a
+                  ></span
+                >
+                <span class="faq-bottom"
+                  ><a href="" class="text-decoration-none">NEWSLETTER</a></span
+                >
               </p>
             </div>
           </div>
         </div>
-
-        <!-- Bootstrap JS -->
-        <script src="./assets/js/jquery.min.js"></script>
-        <script src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script src="./assets/js/all.min.js"></script>
       </div>
     </section>
     <!----/FAQs-->
@@ -186,7 +234,9 @@
               <br />
               <br />
               <br />
-              <a href="" class="text-decoration-none">Terms & Condition</a>
+              <a href="" class="text-decoration-none text-white"
+                >Terms & Condition</a
+              >
             </div>
             <div class="col-lg-2 col-media mt-5 pt-5 ml-auto">
               <h3 class="widget widget-title">Contact Us</h3>
@@ -222,7 +272,9 @@
               <br />
               <br />
 
-              <a href="" class="text-decoration-none">Privacy Policy</a>
+              <a href="" class="text-decoration-none text-white"
+                >Privacy Policy</a
+              >
             </div>
           </div>
         </div>
@@ -235,6 +287,8 @@
     <!-- bootstrap js -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- /bootstrap js -->
     <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/fontawesome.js"></script>
   </body>
 </html>

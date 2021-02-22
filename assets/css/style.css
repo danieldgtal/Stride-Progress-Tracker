@@ -51,14 +51,13 @@ nav .nav-link {
 }
 
 .sign-up-btn {
-  width: 180px;
-  height: 64px;
-  /* left: 10px; */
-  background: #003399;
-  border-radius: 40px;
-  box-shadow: 0 2px 2px #003399;
-  padding-left: 30px;
-  padding-right: 30px;
+  border-radius: 1.5rem;
+  background-color: #003399;
+}
+.sign-up-btn:link,
+.sign-up-btn:visited{
+  color: #fff !important;
+
 }
 .sign-up-btn:hover {
   box-shadow: 0px 2px 5px #003399;

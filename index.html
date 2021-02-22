@@ -3,7 +3,11 @@
   <head>
     <title>Stride:: Progress Tracker</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,8 +19,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-white">
-        <div class="container mt-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white my-3">
+        <div class="container">
           <a class="navbar-brand" href="#"
             ><img src="./assets/img/logo/logo.svg" class="" alt="" />
           </a>
@@ -35,10 +39,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -46,12 +57,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>
               </li>
-              <a class="nav-link" href="#"
-                ><span
-                  class="sign-up animated bounceInDown"
-                  id="animated-example"
-                  >Sign up</span
-                ></a
+
+              <a
+                class="sign-up-btn text-decoration-none text-white text-center"
+                href="#"
+                >Sign Up</a
               >
             </ul>
           </div>
@@ -62,26 +72,24 @@
     <section>
       <div class="jumbotron bg-white sm-mt-4">
         <div class="container">
+          <span class="circle animated bounce"></span>
           <div class="row">
-            <div class="col-sm-12 col-md-4 my-auto sm-mb-3">
+            <div class="col-sm-12 col-md-6 my-auto">
+              <h3 class="h3 all-in-one mb-0">Step on the right track!</h3>
               <div class="clearfix">
-                <h3 class="h3 all-in-one mb-0">
-                  Your all-in-one <br />
-                  progress tracker
-                </h3>
-
-                <p class="track-your-progress d-block mt-0 mb-4 pb-4">
-                  Track your progress as a student with this helpful app
+                <p class="track-your-progress d-block mt-0 pb-4">
+                  Stride towards excellence and share your success! Become a pro
+                  in no time.
                 </p>
                 <a
-                  href=""
-                  class="text-white text-center btn-sm btn-lg btn-block get-started text-decoration-none animated bounceInDown"
+                  href="#"
+                  class="text-white text-center btn-sm btn-lg btn-block position-relative get-started text-decoration-none animated bounceInDown"
                   id="animated-example"
                   >Get Started</a
                 >
               </div>
             </div>
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-6 sm-pt-4">
               <figure class="float-right">
                 <img
                   src="./assets/img/hero/hero1_new.png"
@@ -95,110 +103,149 @@
       </div>
     </section>
     <!---/Hero Section---->
-    <!-- FAQs -->
-    <section>
-      <div class="container">
-        <div class="clearfix">
-          <div class="row">
-            <div class="col-12 how-it-works">
-              <p class="h3 text-left">HOW IT WORKS</p>
-              <p class="h3 text-left">TESTIMONIAL</p>
-            </div>
-            <div class="col-12">
-              <p class="h3 common-questions">COMMON QUESTIONS</p>
-              <p class="h3 frequent-questions">Frequently Asked Questions</p>
-            </div>
-            <div class="col-11">
-              <p class="text-left quick-answers d-block">
-                Get quick answers to all your questions and concerns about
-                <span class="font-weight-bold"> Stride Progress Tracker </span>
-                Whether as a member, influencer or just a visitor, we will have
-                an answer waiting for you.
-              </p>
-            </div>
-
-            <div class="col-12 pt-4 faq-dropdown">
-              <p class="h3 font-weight-bold">
-                How does Progress Tracker work?
-                <a
-                  data-toggle="collapse"
-                  href="#collapseFaqOne"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseFaqOne"
-                  ><i class="fa fa-caret-down float-right"></i
-                ></a>
-              </p>
-
-              <div class="collapse" id="collapseFaqOne">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-                libero eius nihil porro in illo, cupiditate deleniti debitis
-                voluptate iusto nisi dignissimos laborum quibusdam eveniet
-                ducimus exercitationem consequatur atque, possimus totam facilis
-                soluta ab quod? Adipisci repudiandae earum quaerat qui?
+    <!--Card Section---->
+    <section id="card-section">
+      <div class="container mb-4 pb-4">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card border-0">
+              <div class="card-img-top card-circle"></div>
+              <div class="card-body">
+                <h5 class="card-title">Keep Track</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
               </div>
-
-              <hr />
-              <p class="h3 font-weight-bold">
-                How do i know my Skill level?<a
-                  data-toggle="collapse"
-                  href="#collapseFaqTwo"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseFaqTwo"
-                  ><i class="fa fa-caret-down float-right"></i
-                ></a>
-              </p>
-              <div class="collapse" id="collapseFaqTwo">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-                libero eius nihil porro in illo, cupiditate deleniti debitis
-                voluptate iusto nisi dignissimos laborum quibusdam eveniet
-                ducimus exercitationem consequatur atque, possimus totam facilis
-                soluta ab quod? Adipisci repudiandae earum quaerat qui?
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card border-0 sm-pt-2">
+              <div class="card-img-top card-circle">
+                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
               </div>
-              <hr />
-              <p class="h3 font-weight-bold">
-                Is there an Option for bitcoin Payment?<a
-                  data-toggle="collapse"
-                  href="#collapseFaqThree"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseFaqTwo"
-                  ><i class="fa fa-caret-down float-right"></i
-                ></a>
-              </p>
-              <div class="collapse" id="collapseFaqThree">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
-                libero eius nihil porro in illo, cupiditate deleniti debitis
-                voluptate iusto nisi dignissimos laborum quibusdam eveniet
-                ducimus exercitationem consequatur atque, possimus totam facilis
-                soluta ab quod? Adipisci repudiandae earum quaerat qui?
+              <div class="card-body mt-sm-2">
+                <h5 class="card-title">Build Momentum</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
               </div>
-              <br class="mb-3" />
-
-              <p>
-                <span class="faq-bottom pr-4"
-                  ><a href="" class="text-decoration-none">
-                    CALL-TO-ACTION</a
-                  ></span
-                >
-                <span class="faq-bottom"
-                  ><a href="" class="text-decoration-none">NEWSLETTER</a></span
-                >
-              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card border-0">
+              <div class="card-img-top card-circle"></div>
+              <div class="card-body">
+                <h5 class="card-title">Stay Ahead</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!----/FAQs-->
+    <!--/Card Section  -->
+    <!-- organization -->
+    <section id="organizations">
+      <div class="container">
+        <div class="institution">
+          <h3 class="h3 pb-3 text-center text-primary">FOR INSTITUTIONS</h3>
+          <figure>
+            <img
+              src="./assets/img/Rectangle 167.png"
+              class="img-fluid figure-img"
+              alt=""
+            />
+          </figure>
+          <p class="text-center pb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+            temporibus molestiae perferendis eius debitis cum quibusdam dolorem.
+            Voluptas natus voluptatum labore, eligendi ullam cumque voluptates
+            aperiam veniam, esse omnis quidem.
+          </p>
+
+          <hr class="w-75 mx-auto" />
+        </div>
+        <div class="institution">
+          <h3 class="h3 pb-3 text-center text-primary">FOR CORPORATION</h3>
+          <figure>
+            <img
+              src="./assets/img/Rectangle 167.png"
+              class="img-fluid figure-img"
+              alt=""
+            />
+          </figure>
+          <p class="text-center pb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+            temporibus molestiae perferendis eius debitis cum quibusdam dolorem.
+            Voluptas natus voluptatum labore, eligendi ullam cumque voluptates
+            aperiam veniam, esse omnis quidem.
+          </p>
+
+          <hr class="w-75 mx-auto" />
+        </div>
+      </div>
+    </section>
+    <!-- /organization -->
+    <section id="partners">
+      <h3 class="text-center my-auto pb-4">Partners</h3>
+    </section>
+    <section id="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="testimonial-left float-left pb-4">
+              <p class="h3 text-primary">TESTIMONIALS</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                porro quas ratione accusantium nisi placeat est numquam
+                cupiditate libero distinctio, voluptatum asperiores ducimus
+                reiciendis aliquam! Dolore asperiores est architecto dolorem!
+              </p>
+              <br />
+              <p>Giftkeny Unusual</p>
+
+              <i class="fa fa-angle-left"></i>
+              <i class="fa fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="float-right">
+              <img
+                src="./assets/img/Rectangle 168.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscribe">
+      <div class="position-absolute subscribe-circle">
+        <img src="./assets/img/Vector.svg" class="img-fluid" alt="" />
+      </div>
+      <div class="container">
+        <div class="rectangle">
+          <h3 class="pb-2 pt-4">
+            Get weekly updates on the newest design stories, case studies and
+            tips right in your mailbox.
+          </h3>
+        </div>
+      </div>
+    </section>
+
     <footer id="footer" class="footer-type1">
       <div id="footer-widget">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-company mr-4 mt-5 pt-5">
               <img
-                src="./assets/img/logo/logo.svg"
+                src="./assets/img/logo/stride-white.png"
                 alt=""
                 width="177px"
                 class="mb-3"
@@ -210,9 +257,6 @@
                 dolorum architecto reiciendis ducimus explicabo. Repudiandae
                 optio ullam temporibus eligendi reiciendis ab suscipit!
               </p>
-              <br />
-              <br />
-              <p>Copyright &copy; 2021 Stride Corporation All right reserved</p>
             </div>
             <div class="col-lg-2 col-link mt-5 pt-5 ml-auto">
               <h3 class="widget widget-title">Our Services</h3>
@@ -231,14 +275,8 @@
                 <li><a href="./contact_us.php">Team</a></li>
                 <li><a href="./contact_us.php">Careers</a></li>
               </ul>
-              <br />
-              <br />
-              <br />
-              <a href="" class="text-decoration-none text-white"
-                >Terms & Condition</a
-              >
             </div>
-            <div class="col-lg-2 col-media mt-5 pt-5 ml-auto">
+            <div class="col-lg-2 mt-5 pt-5 ml-auto">
               <h3 class="widget widget-title">Contact Us</h3>
               <ul class="widget-social-media list-unstyled">
                 <li>
@@ -267,12 +305,20 @@
                 </li>
                 <li></li>
               </ul>
-              <br />
-              <br />
-              <br />
-              <br />
-
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-4 mr-4">
+              <p>Copyright &copy; 2021 Stride Corporation All right reserved</p>
+            </div>
+            <div class="col-sm-12 col-lg-2 ml-auto"></div>
+            <div class="col-lg-2 ml-auto">
               <a href="" class="text-decoration-none text-white"
+                >Terms & Condition</a
+              >
+            </div>
+            <div class="col-sm-12 col-lg-2 ml-auto">
+              <a href="" class="text-white text-decoration-none"
                 >Privacy Policy</a
               >
             </div>
@@ -281,7 +327,6 @@
       </div>
       <br /><br />
       <br />
-      <a id="scroll-top" class="show"></a>
     </footer>
     <!-- footer -->
     <!-- bootstrap js -->

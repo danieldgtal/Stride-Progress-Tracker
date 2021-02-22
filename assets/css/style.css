@@ -4,7 +4,6 @@
 }
 body {
   overflow-x: hidden;
-  overflow-y: auto;
 }
 h1,
 h2,
@@ -15,17 +14,17 @@ h6,
 p {
   font-family: "DM Sans", sans-serif;
 }
-
-.nav-brand {
-  position: absolute;
+p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: normal;
+  /* font-size: 30px; */
 }
 .nav-item a {
   font-family: "DM Sans";
-  font-weight: 400;
+  font-weight: 700;
 }
-.nav-item .active {
-  color: #ff6600;
-}
+
 .navbar-nav li a:hover {
   color: #ff6600 !important;
   border-top: 3px solid #ff6600;
@@ -35,58 +34,63 @@ nav .nav-brand img {
   height: 64px;
   top: 28px;
   left: 120px;
+  position: absolute;
 }
 header .nav-item .nav-link:hover {
   color: #ff6600;
 }
 nav .nav-link {
-  height: 64px;
-  width: 163.46939086914062px;
-  left: 614px;
-  top: 28px;
-  border-radius: nullpx;
-  text-align: center;
-}
-.navbar .progress-tracker {
-  position: absolute;
-  left: 14.17%;
-  right: 78.12%;
-  top: 54.17%;
-  bottom: 22.5%;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
   line-height: 28px;
+  width: 106px;
+  font-size: 16px;
+  left: 470px;
+  top: 28px;
+  font-family: "DM Sans";
+  text-align: center;
   letter-spacing: 0.75px;
-  color: #001732;
-  padding-top: 5px;
 }
 
-.sign-up {
-  color: #ffffff;
+.sign-up-btn {
+  width: 180px;
+  height: 64px;
+  /* left: 10px; */
   background: #003399;
   border-radius: 40px;
-  width: 200px;
-  height: 64px;
-  padding-left: 26px;
-  padding-right: 26px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   box-shadow: 0 2px 2px #003399;
-  animation-duration: 10s;
-  animation-fill-mode: both;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-.sign-up:hover {
+.sign-up-btn:hover {
   box-shadow: 0px 2px 5px #003399;
 }
-
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 120px;
+  left: 267px;
+}
+.container > .animated {
+  background-image: url(/css/images/logo.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 95px;
+  margin-bottom: 60px;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+.container > .bounce {
+  animation-name: bounce;
+}
 .jumbotron .all-in-one {
-  height: 154px;
-  width: 448px;
+  height: 70px;
+  width: 646px;
   left: 120px;
-  top: 383px;
+  top: 484px;
   /* position: absolute; */
-  font-size: 44px;
+  font-size: 3.5rem;
   font-family: "Gochi Hand";
   color: #001732;
 }
@@ -94,7 +98,7 @@ nav .nav-link {
   height: 76px;
   width: 478px;
   left: 120px;
-  top: 557px;
+  top: 572px;
   /* position: absolute; */
   font-size: 24px;
   font-family: DM Sans;
@@ -103,6 +107,7 @@ nav .nav-link {
   line-height: 38px;
   letter-spacing: 0.75px;
   text-align: left;
+  color: #001732;
 }
 /* Hero Section */
 .jumbotron .get-started {
@@ -112,7 +117,7 @@ nav .nav-link {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 1px;
-  background: #003399;
+  background: #ff6600;
   border-radius: 20px;
   padding-left: 26px;
   padding-right: 26px;
@@ -133,7 +138,48 @@ nav .nav-link {
 .jumbotron a:hover {
   box-shadow: 0px 2px 5px #003399;
 }
+#card-section,
+#card-section .card {
+  background: linear-gradient(180deg, #f9f9f9 0%, rgba(249, 249, 249, 0) 100%);
+}
+#card-section .card {
+  width: 20rem;
+}
+#card-section .card-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 68px;
+  background: #003399;
+  margin-left: 1.3rem;
+}
+#card-section .card-title {
+  font-family: "DM Sans";
+  font-size: 25px;
+  line-height: 45px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#card-section .card-text {
+  font-family: "DM Sans";
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.8rem;
+  letter-spacing: 0.75px;
+  top: 205px;
+  color: #001732;
+}
+#card-section .row {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
+#subscribe .rectangle {
+  border-radius: 52px;
+  box-shadow: 0px 32px 64px 0px #001732 8%;
+}
+.subscribe-circle {
+}
 .container .how-it-works {
   /* margin-bottom: 10px;
   margin-top: 10px; */
@@ -242,24 +288,20 @@ footer .text-white {
   width: 12px;
   padding-right: 3px;
 } */
-/* Animation */
-@-webkit-keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+  .jumbotron .all-in-one {
+    /* position: absolute; */
+    font-size: 2.3rem;
   }
-  60% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
+  .jumbotron .track-your-progress {
+    width: 100%;
+    padding-bottom: 0rem;
+    text-align: left;
   }
 }
-
+/* Animation */
 @keyframes bounceInDown {
   0% {
     opacity: 0;
@@ -276,8 +318,21 @@ footer .text-white {
     transform: translateY(0);
   }
 }
-
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 .bounceInDown {
-  -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }

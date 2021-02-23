@@ -61,7 +61,8 @@ nav .nav-link {
 }
 .sign-up-btn:hover {
   border-top: none !important;
-  color: white !important;
+    color: #fff !important;
+
 }
 .circle {
   width: 250px;

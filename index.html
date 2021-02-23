@@ -1,289 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Stride:: Progress Tracker</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Gochi+Hand&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/img/logo/favicon.ico" rel="shortcut icon" />
+  </head>
 
-<head>
-  <title>Stride:: Progress Tracker</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Gochi+Hand&family=Roboto&display=swap"
-    rel="stylesheet" />
-  <link href="./assets/img/logo/favicon.ico" rel="shortcut icon" />
-</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white my-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/img/logo/logo.svg" class="" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white my-3">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="./assets/img/logo/logo.svg" class="" alt="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="sign-up-btn nav-link" href="#">Sign Up</a>
-            </li>
-
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="sign-up-btn nav-link" href="#">Sign Up</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Hero Section -->
-  <section>
-    <div class="jumbotron bg-white sm-mt-4">
-      <div class="container">
-        <span class="circle animated bounce"></span>
-        <div class="row">
-          <div class="col-sm-12 col-md-6 my-auto">
-            <h3 class="h3 all-in-one mb-0">Step on the right track!</h3>
-            <div class="clearfix">
-              <p class="track-your-progress d-block mt-0 pb-4">
-                Stride towards excellence and share your success! Become a pro
-                in no time.
-              </p>
-              <a href="#"
-                class="text-white text-center btn-sm btn-lg btn-block position-relative get-started text-decoration-none animated bounceInDown"
-                id="animated-example">Get Started</a>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section>
+      <div class="jumbotron bg-white sm-mt-4">
+        <div class="container">
+          <span class="circle animated bounce"></span>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 my-auto">
+              <h3 class="h3 all-in-one mb-0">Step on the right track!</h3>
+              <div class="clearfix">
+                <p class="track-your-progress d-block mt-0 pb-4">
+                  Stride towards excellence and share your success! Become a pro
+                  in no time.
+                </p>
+                <a
+                  href="#"
+                  class="text-white text-center btn-sm btn-lg btn-block position-relative get-started text-decoration-none animated bounceInDown"
+                  id="animated-example"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 sm-pt-4">
+              <figure class="float-right">
+                <img
+                  src="./assets/img/hero/hero1_new.png"
+                  class="img-fluid figure-img"
+                  alt="hero1"
+                />
+              </figure>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 sm-pt-4">
-            <figure class="float-right">
-              <img src="./assets/img/hero/hero1_new.png" class="img-fluid figure-img" alt="hero1" />
-            </figure>
+        </div>
+      </div>
+    </section>
+    <!---/Hero Section---->
+    <!--Card Section---->
+    <section id="card-section">
+      <div class="container mb-4 pb-4">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card border-0">
+              <div class="card-img-top card-circle"></div>
+              <div class="card-body">
+                <h5 class="card-title">Keep Track</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card border-0 sm-pt-2">
+              <div class="card-img-top card-circle">
+                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+              </div>
+              <div class="card-body mt-sm-2">
+                <h5 class="card-title">Build Momentum</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card border-0">
+              <div class="card-img-top card-circle"></div>
+              <div class="card-body">
+                <h5 class="card-title">Stay Ahead</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!---/Hero Section---->
-  <!--Card Section---->
-  <section id="card-section">
-    <div class="container mb-4 pb-4">
+    </section>
+    <!--/Card Section  -->
+    <!-- organization -->
+    <section id="organizations">
+      <div class="container">
+        <div class="institution">
+          <h3 class="h3 pb-3 text-center text-primary">FOR INSTITUTIONS</h3>
+          <figure>
+            <img
+              src="./assets/img/Rectangle 167.png"
+              class="img-fluid figure-img"
+              alt=""
+            />
+          </figure>
+          <p class="text-center pb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+            temporibus molestiae perferendis eius debitis cum quibusdam dolorem.
+            Voluptas natus voluptatum labore, eligendi ullam cumque voluptates
+            aperiam veniam, esse omnis quidem.
+          </p>
+
+          <hr class="w-75 mx-auto" />
+        </div>
+        <div class="institution">
+          <h3 class="h3 pb-3 text-center text-primary">FOR CORPORATION</h3>
+          <figure>
+            <img
+              src="./assets/img/Rectangle 167.png"
+              class="img-fluid figure-img"
+              alt=""
+            />
+          </figure>
+          <p class="text-center pb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+            temporibus molestiae perferendis eius debitis cum quibusdam dolorem.
+            Voluptas natus voluptatum labore, eligendi ullam cumque voluptates
+            aperiam veniam, esse omnis quidem.
+          </p>
+
+          <hr class="w-75 mx-auto" />
+        </div>
+      </div>
+    </section>
+    <!-- /organization -->
+    <section id="partners">
+      <h3 class="text-center my-auto pb-4">Partners</h3>
+    </section>
+    <section id="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="testimonial-left float-left pb-4">
+              <p class="h3 text-primary">TESTIMONIALS</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                porro quas ratione accusantium nisi placeat est numquam
+                cupiditate libero distinctio, voluptatum asperiores ducimus
+                reiciendis aliquam! Dolore asperiores est architecto dolorem!
+              </p>
+              <br />
+              <p>Giftkeny Unusual</p>
+
+              <i class="fa fa-angle-left"></i>
+              <i class="fa fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="float-right">
+              <img
+                src="./assets/img/Rectangle 168.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="subscribe">
       <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="card border-0">
-            <div class="card-img-top card-circle"></div>
-            <div class="card-body">
-              <h5 class="card-title">Keep Track</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+        <div class="col-12">
+          <div class="position-absolute subscribe-circle">
+            <img src="./assets/img/Vector.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="container position-relative">
+          <div class="subscribe-rectangle position-absolute">
+            <img src="./assets/img/Rectangle 1.png" class="img-fluid" alt="" />
+            <div class="container position-relative">
+              <h4 class="h3 position-absolute w-75">
+                Get weekly updates on the newest design stories, case studies
+                and tips <br />
+                right in your mailbox.
+              </h4>
+              <form action="" class="h3 position-absolute w-75">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                    <div class="input-group-append">
+                      <button type="button" class="btn btn-primary">
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <h5 class="subscribe position-absolute w-75">
+                Your email is safe with us, we don’t spam. You can unsubscribe
+                at anytime.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer-type1 position-relative">
+      <div id="footer-widget">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-company mr-4 mt-5 pt-5">
+              <img
+                src="./assets/img/logo/stride-white.png"
+                alt=""
+                width="177px"
+                class="mb-3"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                minima minus quidem facilis sed beatae, libero quibusdam,
+                dolorum architecto reiciendis ducimus explicabo. Repudiandae
+                optio ullam temporibus eligendi reiciendis ab suscipit!
               </p>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card border-0 sm-pt-2">
-            <div class="card-img-top card-circle">
-              <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            <div class="col-lg-2 col-link mt-5 pt-5 ml-auto">
+              <h3 class="widget widget-title">Our Services</h3>
+              <ul class="widget-nav-menu list-unstyled">
+                <li><a href="#">Email Marketing</a></li>
+                <li><a href="#">Campaign</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Offline</a></li>
+              </ul>
             </div>
-            <div class="card-body mt-sm-2">
-              <h5 class="card-title">Build Momentum</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+            <div class="col-lg-2 col-course mt-5 pt-5 ml-auto">
+              <h3 class="widget widget-title">About Us</h3>
+              <ul class="widget-nav-menu list-unstyled">
+                <li><a href="./blog.html">Our Story</a></li>
+                <li><a href="./gallery.php">Benefits</a></li>
+                <li><a href="./contact_us.php">Team</a></li>
+                <li><a href="./contact_us.php">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 mt-5 pt-5 ml-auto">
+              <h3 class="widget widget-title">Contact Us</h3>
+              <ul class="widget-social-media list-unstyled">
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fab fa-facebook-f text-white"
+                      aria-hidden="true"
+                    ></i
+                    ><span class="pl-3">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fab fa-twitter text-white" aria-hidden="true"></i
+                    ><span class="pl-3">Twitter</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fab fa-instagram text-white"
+                      aria-hidden="true"
+                    ></i
+                    ><span class="pl-3">Instagram</span></a
+                  >
+                </li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-lg-4 mr-4">
+              <p>Copyright &copy; 2021 Stride Corporation All right reserved</p>
+            </div>
+            <div class="col-sm-12 col-lg-2 ml-auto"></div>
+            <div class="col-lg-2 ml-auto">
+              <a href="" class="text-decoration-none text-white"
+                >Terms & Condition</a
+              >
+            </div>
+            <div class="col-sm-12 col-lg-2 ml-auto">
+              <a href="" class="text-white text-decoration-none"
+                >Privacy Policy</a
+              >
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <div class="card border-0">
-            <div class="card-img-top card-circle"></div>
-            <div class="card-body">
-              <h5 class="card-title">Stay Ahead</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <!--/Card Section  -->
-  <!-- organization -->
-  <section id="organizations">
-    <div class="container">
-      <div class="institution">
-        <h3 class="h3 pb-3 text-center text-primary">FOR INSTITUTIONS</h3>
-        <figure>
-          <img src="./assets/img/Rectangle 167.png" class="img-fluid figure-img" alt="" />
-        </figure>
-        <p class="text-center pb-4">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
-          temporibus molestiae perferendis eius debitis cum quibusdam dolorem.
-          Voluptas natus voluptatum labore, eligendi ullam cumque voluptates
-          aperiam veniam, esse omnis quidem.
-        </p>
-
-        <hr class="w-75 mx-auto" />
-      </div>
-      <div class="institution">
-        <h3 class="h3 pb-3 text-center text-primary">FOR CORPORATION</h3>
-        <figure>
-          <img src="./assets/img/Rectangle 167.png" class="img-fluid figure-img" alt="" />
-        </figure>
-        <p class="text-center pb-4">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
-          temporibus molestiae perferendis eius debitis cum quibusdam dolorem.
-          Voluptas natus voluptatum labore, eligendi ullam cumque voluptates
-          aperiam veniam, esse omnis quidem.
-        </p>
-
-        <hr class="w-75 mx-auto" />
-      </div>
-    </div>
-  </section>
-  <!-- /organization -->
-  <section id="partners">
-    <h3 class="text-center my-auto pb-4">Partners</h3>
-  </section>
-  <section id="testimonial">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <div class="testimonial-left float-left pb-4">
-            <p class="h3 text-primary">TESTIMONIALS</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-              porro quas ratione accusantium nisi placeat est numquam
-              cupiditate libero distinctio, voluptatum asperiores ducimus
-              reiciendis aliquam! Dolore asperiores est architecto dolorem!
-            </p>
-            <br />
-            <p>Giftkeny Unusual</p>
-
-            <i class="fa fa-angle-left"></i>
-            <i class="fa fa-angle-right"></i>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="float-right">
-            <img src="./assets/img/Rectangle 168.png" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="subscribe">
-    <div class="position-absolute subscribe-circle">
-      <img src="./assets/img/Vector.svg" class="img-fluid" alt="" />
-    </div>
-    <div class="container">
-      <div class="rectangle">
-        <h3 class="pb-2 pt-4">
-          Get weekly updates on the newest design stories, case studies and
-          tips right in your mailbox.
-        </h3>
-      </div>
-    </div>
-  </section>
-
-  <footer id="footer" class="footer-type1">
-    <div id="footer-widget">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-company mr-4 mt-5 pt-5">
-            <img src="./assets/img/logo/stride-white.png" alt="" width="177px" class="mb-3" />
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              minima minus quidem facilis sed beatae, libero quibusdam,
-              dolorum architecto reiciendis ducimus explicabo. Repudiandae
-              optio ullam temporibus eligendi reiciendis ab suscipit!
-            </p>
-          </div>
-          <div class="col-lg-2 col-link mt-5 pt-5 ml-auto">
-            <h3 class="widget widget-title">Our Services</h3>
-            <ul class="widget-nav-menu list-unstyled">
-              <li><a href="#">Email Marketing</a></li>
-              <li><a href="#">Campaign</a></li>
-              <li><a href="#">Branding</a></li>
-              <li><a href="#">Offline</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-course mt-5 pt-5 ml-auto">
-            <h3 class="widget widget-title">About Us</h3>
-            <ul class="widget-nav-menu list-unstyled">
-              <li><a href="./blog.html">Our Story</a></li>
-              <li><a href="./gallery.php">Benefits</a></li>
-              <li><a href="./contact_us.php">Team</a></li>
-              <li><a href="./contact_us.php">Careers</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 mt-5 pt-5 ml-auto">
-            <h3 class="widget widget-title">Contact Us</h3>
-            <ul class="widget-social-media list-unstyled">
-              <li>
-                <a href="#"><i class="fab fa-facebook-f text-white" aria-hidden="true"></i><span
-                    class="pl-3">Facebook</span>
-                </a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter text-white" aria-hidden="true"></i><span
-                    class="pl-3">Twitter</span></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram text-white" aria-hidden="true"></i><span
-                    class="pl-3">Instagram</span></a>
-              </li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-4 mr-4">
-            <p>Copyright &copy; 2021 Stride Corporation All right reserved</p>
-          </div>
-          <div class="col-sm-12 col-lg-2 ml-auto"></div>
-          <div class="col-lg-2 ml-auto">
-            <a href="" class="text-decoration-none text-white">Terms & Condition</a>
-          </div>
-          <div class="col-sm-12 col-lg-2 ml-auto">
-            <a href="" class="text-white text-decoration-none">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br /><br />
-    <br />
-  </footer>
-  <!-- footer -->
-  <!-- bootstrap js -->
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <!-- /bootstrap js -->
-  <script src="./assets/js/all.min.js"></script>
-  <script src="./assets/js/fontawesome.js"></script>
-</body>
-
+      <br /><br />
+      <br />
+    </footer>
+    <!-- footer -->
+    <!-- bootstrap js -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- /bootstrap js -->
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/fontawesome.js"></script>
+  </body>
 </html>

@@ -20,6 +20,50 @@ p {
   font-style: normal;
   /* font-size: 30px; */
 }
+.text-primary {
+  color: #003399;
+}
+.text-secondary {
+  color: #ff6600 !important;
+}
+.btn {
+  font-family: "DM Sans";
+  font-weight: bold;
+  border-radius: 12px;
+  /* padding-left: 26px;
+  padding-right: 26px; */
+}
+.btn-primary {
+  background-color: #003399;
+  border: #003399 !important;
+}
+.btn-primary:hover {
+  background-color: #003399 !important;
+  border: #003399;
+}
+.btn-secondary {
+  background-color: #ff6600;
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  color: #ff6600;
+  background-color: #f9f9f9;
+}
+.btn-outline-primary {
+  background-color: #ffffff;
+  color: #003399;
+}
+.btn-outline-primary:hover {
+  background-color: #003399 !important;
+}
+.btn-outline-secondary {
+  background-color: #ffffff;
+  color: #ff6600;
+}
+.btn-outline-secondary:hover {
+  background-color: #ff6600;
+  color: #ffffff;
+}
 .nav-item a {
   font-family: "DM Sans";
   font-weight: 700;
@@ -63,16 +107,22 @@ nav .nav-link {
 }
 .sign-up-btn:hover {
   border-top: none !important;
-
 }
 .circle {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   background-color: #f9f9f9;
   position: absolute;
   top: 120px;
-  left: 267px;
+  left: 400px;
+}
+.circle-two {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  mask-position: absolute;
 }
 .container > .animated {
   background-image: url(/css/images/logo.png);
@@ -175,8 +225,39 @@ nav .nav-link {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-#testimonial {
-  /* margin-bottom: 10rem; */
+#organizations .institution .orange {
+  left: 1140px;
+  top: 1390px;
+}
+#organizations .institution .blue {
+  left: 190px;
+  top: 1770px;
+  z-index: -99 !important ;
+}
+#organizations .corporation .orange {
+  left: 190px;
+  top: 2120px;
+}
+#organizations .corporation .blue {
+  left: 1135px;
+  top: 2520px;
+  z-index: -99 !important;
+}
+#partners {
+  height: 10rem;
+}
+
+#testimonial .testimonial-left > p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+#testimonial .arrow {
+  background-color: #003399 !important;
+  width: 50px !important;
 }
 #subscribe {
   /*  */
@@ -210,13 +291,19 @@ nav .nav-link {
 .subscribe-rectangle form .form-control {
   background-color: #f9f9f9;
 }
-.subscribe-rectangle form .form-control:focus {
+.subscribe-rectangle form input {
   border-color: #ff6600;
   outline: 0;
   /* i stopped here */
   /* box-shadow: rgba(255, 102, 0, 1) !important; */
 }
-
+#subscribe input[type="text"]:focus {
+  box-shadow: 0 2px 2px rgba(255, 102, 0, 1) !important;
+}
+#subscribe .btn:active {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
 .subscribe-rectangle form .btn {
   background-color: #ff6600;
 }
@@ -334,7 +421,38 @@ footer li a:hover {
 }
 footer .text-white {
 }
-
+/* Pricing page */
+#pricing .card {
+  background: #ffffff;
+  border: 1.5px solid #f9f9f9;
+  border-radius: 16px;
+  box-shadow: ;
+}
+.card .card-title {
+  font-family: "DM Sans";
+  font-weight: 700;
+  color: #001732;
+  letter-spacing: 0.3em;
+  font-size: 50px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+}
+.card .h3 {
+  font-family: "Gochi Hand";
+  font-size: 32px;
+  line-height: 25px;
+  font-weight: 400;
+  font-style: normal;
+}
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #001732;
+  line-height: 25px;
+}
+#pricing .card-2 {
+  box-shadow: 0 5px 5px 5px rgba(0, 51, 153, 1);
+}
 /* footer .widget-social-media .fab {
   height: 40px;
   width: 12px;

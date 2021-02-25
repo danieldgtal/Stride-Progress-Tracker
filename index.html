@@ -20,7 +20,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white my-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"
             ><img src="./assets/img/logo/logo.svg" class="" alt="" />
@@ -37,44 +37,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white my-3">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="./assets/img/logo/logo.svg" class="" alt="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link sign-up-btn" href="#" style="color: white !important">Sign Up</a>
-            </li>
-
-
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">FAQs</a>
               </li>
@@ -95,11 +65,15 @@
         </div>
       </nav>
     </header>
+    <br /><br />
     <!-- Hero Section -->
-    <section>
+    <section id="hero">
       <div class="jumbotron bg-white sm-mt-4">
         <div class="container">
           <span class="circle animated bounce"></span>
+          <span class="circle-two animated bounce"></span>
+          <span class="circle-three animated bounce"></span>
+
           <div class="row">
             <div class="col-sm-12 col-md-6 my-auto">
               <h3 class="h3 all-in-one mb-0">Step on the right track!</h3>
@@ -183,8 +157,18 @@
           <h3 class="h3 pb-3 text-center text-primary">FOR INSTITUTIONS</h3>
           <figure>
             <img
+              src="./assets/img/Vector-orange.svg"
+              class="img-fluid position-absolute orange d-sm-none"
+              alt=""
+            />
+            <img
               src="./assets/img/Rectangle 167.png"
-              class="img-fluid figure-img"
+              class="img-fluid figure-img position-relative"
+              alt=""
+            />
+            <img
+              src="./assets/img/Vector (1).svg"
+              class="img-fluid position-absolute blue d-sm-none"
               alt=""
             />
           </figure>
@@ -197,12 +181,22 @@
 
           <hr class="w-75 mx-auto" />
         </div>
-        <div class="institution">
+        <div class="corporation">
           <h3 class="h3 pb-3 text-center text-primary">FOR CORPORATION</h3>
           <figure>
             <img
+              src="./assets/img/Vector-orange.svg"
+              class="img-fluid position-absolute orange"
+              alt=""
+            />
+            <img
               src="./assets/img/Rectangle 167.png"
-              class="img-fluid figure-img"
+              class="img-fluid figure-img position-relative"
+              alt=""
+            />
+            <img
+              src="./assets/img/Vector (1).svg"
+              class="img-fluid position-absolute blue"
               alt=""
             />
           </figure>
@@ -217,24 +211,33 @@
         </div>
       </div>
     </section>
-    <!-- /organization -->
+    <!-- partners -->
     <section id="partners">
-      <h3 class="text-center my-auto pb-4">Partners</h3>
+      <div class="container">
+        <h3 class="text-center my-auto">Partners</h3>
+      </div>
     </section>
+
+    <!-- testimonials -->
     <section id="testimonial">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-8">
-            <div class="testimonial-left float-left pb-4">
-              <p class="h3 text-primary">TESTIMONIALS</p>
-              <p>
+            <div class="testimonial-left float-left mt-4">
+              <span class="h3 text-primary font-weight-normal pb-4"
+                >TESTIMONIALS</span
+              ><br />
+              <br />
+              <br />
+              <p class="font-weight-bold">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
                 porro quas ratione accusantium nisi placeat est numquam
                 cupiditate libero distinctio, voluptatum asperiores ducimus
                 reiciendis aliquam! Dolore asperiores est architecto dolorem!
               </p>
               <br />
-              <p>Giftkeny Unusual</p>
+              <p class="font-weight-normal">Giftkeny Unusual</p>
+              <br />
 
               <i class="fa fa-angle-left"></i>
               <i class="fa fa-angle-right"></i>
@@ -252,6 +255,7 @@
         </div>
       </div>
     </section>
+    <!-- subscribe -->
     <section id="subscribe">
       <div class="row">
         <div class="col-12">
@@ -277,7 +281,7 @@
                       placeholder="Email Address"
                     />
                     <div class="input-group-append">
-                      <button type="button" class="btn btn-primary">
+                      <button type="button" class="btn text-white">
                         Subscribe
                       </button>
                     </div>

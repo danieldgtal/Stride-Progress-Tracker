@@ -64,6 +64,7 @@ p {
   background-color: #ff6600;
   color: #ffffff;
 }
+
 .nav-item a {
   font-family: "DM Sans";
   font-weight: 700;
@@ -122,7 +123,20 @@ nav .nav-link {
   height: 200px;
   border-radius: 50%;
   background-color: #f9f9f9;
-  mask-position: absolute;
+  position: absolute;
+  top: 450px;
+  left: -20px;
+  /* z-index: 99 !important; */
+}
+.circle-three {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 550px;
+  right: -50px;
+  /* z-index: 99 !important; */
 }
 .container > .animated {
   background-image: url(/css/images/logo.png);
@@ -176,7 +190,7 @@ nav .nav-link {
   padding-top: 16px;
   height: 64px;
   width: 180px;
-  box-shadow: 0 2px 5px #003399;
+  /* box-shadow: 0 2px 5px #ff6600; */
   animation-duration: 5s;
   animation-fill-mode: both;
   color: #f9f9f9;
@@ -188,7 +202,7 @@ nav .nav-link {
   height: 652px;
 } */
 .jumbotron a:hover {
-  box-shadow: 0px 2px 5px #003399;
+  box-shadow: 0px 2px 5px #ff6600;
 }
 #card-section,
 #card-section .card {
@@ -255,9 +269,20 @@ nav .nav-link {
   line-height: 30px;
   letter-spacing: 1px;
 }
-#testimonial .arrow {
-  background-color: #003399 !important;
-  width: 50px !important;
+.testimonial-left .fa-angle-left {
+  background: #003399;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* margin-right: 10px; */
+}
+.testimonial-left .fa-angle-right {
+  background: #003399;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 #subscribe {
   /*  */
@@ -428,6 +453,9 @@ footer .text-white {
   border-radius: 16px;
   box-shadow: ;
 }
+#pricing .card:hover {
+  border-color: #003399;
+}
 .card .card-title {
   font-family: "DM Sans";
   font-weight: 700;
@@ -451,7 +479,10 @@ footer .text-white {
   line-height: 25px;
 }
 #pricing .card-2 {
-  box-shadow: 0 5px 5px 5px rgba(0, 51, 153, 1);
+  box-shadow: 0 10px 10px 10px rgba(249, 249, 249, 1);
+}
+#pricing .card-3 {
+  box-shadow: 0 7px 7px 0 rgba(249, 249, 249, 1);
 }
 /* footer .widget-social-media .fab {
   height: 40px;
@@ -473,6 +504,8 @@ footer .text-white {
   #subscribe {
     /* display: none; */
   }
+}
+@media only screen and (max-width: 720px) {
 }
 /* Animation */
 @keyframes bounceInDown {
